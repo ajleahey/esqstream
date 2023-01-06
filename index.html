@@ -22,6 +22,11 @@
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Podcasts</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Contact</a>
                 </div>
+                <!-- Masto embed-->
+                <a class="mastodon-feed"
+   href="https://esq.social/@emp"
+   data-toot-limit="4"
+   >follow me into the Fediverse</a>
             </div>
             <!-- Page content wrapper-->
             <div id="page-content-wrapper">
@@ -86,5 +91,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-    </body>
+    <!-- Masto Script -->
+                <script type="module" src="https://esm.sh/emfed"></script>
+                </body>
 </html>

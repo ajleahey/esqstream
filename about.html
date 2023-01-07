@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>esqstream.com - streaming all the great esq content</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="d-flex" id="wrapper">
+            <!-- Sidebar-->
+            <div class="border-end bg-white" id="sidebar-wrapper">
+                <div class="sidebar-heading border-bottom bg-light">esqstream</div>
+                <div class="list-group list-group-flush">
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="index.html">Main</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="about.html">About</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="podcasts.html">Podcasts</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="mailto:andrew@leahey.org">Contact</a>
+                </div>
+                <!-- Masto embed-->
+               
+            </div>
+            <!-- Page content wrapper-->
+            <div id="page-content-wrapper">
+                <!-- Top navigation-->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                    <div class="container-fluid">
+                        <button class="btn btn-primary" id="sidebarToggle">Toggle Menu</button>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                                <li class="nav-item active"><a class="nav-link" href="#!">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="https://esq.social/@andrew">@andrew@esq.social</a></li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Listen</a>
+                                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="https://hoth.alonhosting.com:2565/stream.m3u">M3U</a>
+                                        <a class="dropdown-item" href="https://hoth.alonhosting.com:2510/andrewleahey2/1/itunes.pls">Apple Music</a>
+                                        <a class="dropdown-item" href="https://hoth.alonhosting.com:2565/stream">Direct</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#!">YouTube</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Page content-->
+                <div class="container-fluid">
+                    <h1 class="mt-4">esqstream.com - legal radio</h1>
+                    <p>We are an Icecast streaming internet radio server serving audio content that is of interest to the legal community. Our content is commercial-free and run for the amusement and edification of the legal community.</p>
+    <p>esqstream.com is run by <a href="https://esq.social/@andrew">Andrew</a>.</p>
+                   
+                      <p> <div id="app" style="height: 100vh">
+        <!-- Webamp will attempt to center itself within this div -->
+    </div>
+    <script src="https://unpkg.com/webamp@1.4.2/built/webamp.bundle.min.js"></script>
+    <script>
+        const Webamp = window.Webamp;
+        const webamp = new Webamp({
+            initialTracks: [
+                {
+                    metaData: {
+                        artist: "esqstream.com",
+                        title: "legal and law-adjacent audio content"
+                    },
+                    // NOTE: Your audio file must be served from the same domain as your HTML
+                    // file, or served with permissive CORS HTTP headers:
+                    // https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+                    url: "https://hoth.alonhosting.com:2565/stream",
+                    duration: 5.322286
+                },
+                           ],
+        });
+
+        // Returns a promise indicating when it's done loading.
+        webamp.renderWhenReady(document.getElementById('app'));
+    </script>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    <!-- Masto Script -->
+                <script type="module" src="https://esm.sh/emfed"></script>
+                </body>
+</html>

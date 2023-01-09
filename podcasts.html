@@ -61,31 +61,10 @@
                         </ul>
                         <p>We are always looking for new content. If you have a legal podcast or other legal audio content that you think our audience would be interested in, please get in touch!</p>
                      
-                      <p> <div id="app" style="height: 100vh">
-        <!-- Webamp will attempt to center itself within this div -->
-    </div>
-    <script src="https://unpkg.com/webamp@1.4.2/built/webamp.bundle.min.js"></script>
-    <script>
-        const Webamp = window.Webamp;
-        const webamp = new Webamp({
-            initialTracks: [
-                {
-                    metaData: {
-                        artist: "esqstream.com",
-                        title: "legal and law-adjacent audio content"
-                    },
-                    // NOTE: Your audio file must be served from the same domain as your HTML
-                    // file, or served with permissive CORS HTTP headers:
-                    // https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
-                    url: "https://hoth.alonhosting.com:2565/stream",
-                    duration: 5.322286
-                },
-                           ],
-        });
-
-        // Returns a promise indicating when it's done loading.
-        webamp.renderWhenReady(document.getElementById('app'));
-    </script>
+                      <p>
+                 <audio controls><source src=”https://hoth.alonhosting.com:2565/stream?type=.mp3″ type=”audio/MPEG”>Your browser does not support the audio element. Click "Listen" above and choose another option to stream.</audio>
+                         
+                    
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
